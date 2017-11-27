@@ -32,9 +32,9 @@ ifdef ATLASDIR
 endif
 
 ifeq ($(MKL),1)
-    CC=/opt/intel/compilers_and_libraries_2018.1.163/linux/mpi/intel64/bin/mpicc
-    INCLUDEPATH = -I/opt/intel/mkl/include/
-    LIBRARYPATH = -L/opt/intel/mkl/lib/intel64/ 
+    #CC=/opt/intel/compilers_and_libraries_2018.1.163/linux/mpi/intel64/bin/mpicc
+    #INCLUDEPATH = -I/opt/intel/mkl/include/
+    #LIBRARYPATH = -L/opt/intel/mkl/lib/intel64/ 
     LIBS = -lm -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lmkl_blas95_lp64 -lmkl_lapack95_lp64 -fopenmp
     CCOPTION = -DMKL
 endif
